@@ -76,6 +76,12 @@ class ProductListItem extends StatelessWidget {
           ElevatedButton(
             onPressed: () {
               cart.addToCart(product);
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(
+                  content: Text('${product.name} added to cart!'),
+                  duration: Duration(seconds: 2),
+                ),
+              );
             },
             child: Text('Add to Cart'),
           ),

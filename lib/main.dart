@@ -19,6 +19,7 @@ class PraktikumMobileApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Praktikum Mobile',
+      debugShowCheckedModeBanner: false, // Menghilangkan tulisan debug
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
